@@ -5,9 +5,9 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/qor/qor"
-	"github.com/qor/qor/utils"
-	"github.com/qor/roles"
+	"github.com/adderly/qor"
+	"github.com/adderly/qor/utils"
+	"github.com/adderly/roles"
 )
 
 // ErrProcessorSkipLeft skip left processors error, if returned this error in validation, before callbacks, then qor will stop process following processors

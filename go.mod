@@ -1,11 +1,11 @@
-module github.com/qor/qor
+module github.com/adderly/qor
 
 go 1.13
 
 require (
+	github.com/adderly/roles v0.0.0-20201008080147-dcaf8a4646d8
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
 	github.com/gosimple/slug v1.12.0
-	github.com/jinzhu/gorm v1.9.16 // indirect
 	github.com/jinzhu/now v1.1.5
 	github.com/lib/pq v1.10.6
 	github.com/microcosm-cc/bluemonday v1.0.18

@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qor/qor"
-	"github.com/qor/qor/utils"
-	"github.com/qor/roles"
+	"github.com/adderly/qor"
+	"github.com/adderly/qor/utils"
+	"github.com/adderly/roles"
 	"github.com/qor/validations"
 	"gorm.io/gorm/schema"
 )
@@ -286,7 +286,8 @@ func setupValuer(meta *Meta, fieldName string, record interface{}) {
 // The given record must has function 'AssignVersionName' defined, with *Pointer* receiver to create associations on new version
 // Otherwise, the operation would be omitted
 // e.g. the user is creating a new version based on version "2021-3-3-v1". which would be "2021-3-3-v2".
-//      the associations added during the creation should be associated with "2021-3-3-v2" rather than "2021-3-3-v1"
+//
+//	the associations added during the creation should be associated with "2021-3-3-v2" rather than "2021-3-3-v1"
 func switchRecordToNewVersionIfNeeded(context *qor.Context, record interface{}) interface{} {
 	if context.Request == nil {
 		return record
